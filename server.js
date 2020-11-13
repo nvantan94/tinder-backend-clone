@@ -19,7 +19,7 @@ mongoose.connect(connection_url, {
 })
 
 app.get('/', (req, res) => {
-  res.status(200).send('HELLO CLEVER PROGRAMMER!!!');
+  res.status(200).send('WELCOME TO TINDER BACKEND APIS!!!');
 });
 
 app.post('/tinder/cards', (req, res) => {
