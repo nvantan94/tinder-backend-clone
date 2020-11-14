@@ -1,9 +1,11 @@
 import express from 'express'
 import mongoose from 'mongoose'
 import cors from 'cors';
+import dotenv from 'dotenv';
 
 import Cards from './dbCards.js'
 
+dotenv.config();
 const app = express();
 const port = process.env.PORT || 8001;
 const mongodb_password = process.env.MONGODB_PASSWORD
