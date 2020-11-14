@@ -6,8 +6,9 @@ import Cards from './dbCards.js'
 
 const app = express();
 const port = process.env.PORT || 8001;
+const mongodb_password = process.env.MONGODB_PASSWORD
 
-const connection_url = 'mongodb+srv://admin:27ayxE2PRitp2a9r@cluster0.jvazg.mongodb.net/tinderdb?retryWrites=true&w=majority'
+const connection_url = `mongodb+srv://admin:${mongodb_password}@cluster0.jvazg.mongodb.net/tinderdb?retryWrites=true&w=majority`
 
 app.use(express.json());
 app.use(cors());
